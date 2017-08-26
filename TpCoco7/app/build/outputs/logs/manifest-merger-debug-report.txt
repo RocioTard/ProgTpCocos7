@@ -1,0 +1,87 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Rocio\.android\build-cache\7a201d2cb9a868a7f570e15d497e13ef68c82710\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Rocio\.android\build-cache\c2cf7ef1cd8edfe46c80d1bfafec17271bcbeb50\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Rocio\.android\build-cache\f1f79c736ae204f8bdd43c7520a670cfbd2a2abf\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Rocio\.android\build-cache\cc93256f4ee1a614e6a4206af1947d5e86c03d2c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Rocio\.android\build-cache\f477f8e2467a89e2b939f4ac9ac20dbf4ade0a7c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Rocio\.android\build-cache\3c61eeb8e1af3e0cc9d8df09abc15326d0ed98cb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Rocio\.android\build-cache\c61dc0c7e93405838d761dda77ec7cafb86393e6\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Rocio\.android\build-cache\c122b2c62e6659b3d971ba15a87a1eac8db353ea\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Rocio\.android\build-cache\b26ced47d205a2b287e6edf0d0ca04b010395ebe\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Rocio\.android\build-cache\0fb6fb09cfe01299b3a081f1bb9056102b47ff34\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.a42225260.tpcoco7.ActivityPrincipal
+ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:12:19-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Rocio\.android\build-cache\7a201d2cb9a868a7f570e15d497e13ef68c82710\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Rocio\.android\build-cache\c2cf7ef1cd8edfe46c80d1bfafec17271bcbeb50\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Rocio\.android\build-cache\f1f79c736ae204f8bdd43c7520a670cfbd2a2abf\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Rocio\.android\build-cache\cc93256f4ee1a614e6a4206af1947d5e86c03d2c\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Rocio\.android\build-cache\f477f8e2467a89e2b939f4ac9ac20dbf4ade0a7c\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Rocio\.android\build-cache\3c61eeb8e1af3e0cc9d8df09abc15326d0ed98cb\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Rocio\.android\build-cache\c61dc0c7e93405838d761dda77ec7cafb86393e6\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Rocio\.android\build-cache\c122b2c62e6659b3d971ba15a87a1eac8db353ea\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Rocio\.android\build-cache\b26ced47d205a2b287e6edf0d0ca04b010395ebe\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Rocio\.android\build-cache\0fb6fb09cfe01299b3a081f1bb9056102b47ff34\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Rocio\.android\build-cache\7a201d2cb9a868a7f570e15d497e13ef68c82710\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Rocio\Desktop\TpCoco7\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Rocio\.android\build-cache\7a201d2cb9a868a7f570e15d497e13ef68c82710\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Rocio\.android\build-cache\c2cf7ef1cd8edfe46c80d1bfafec17271bcbeb50\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Rocio\.android\build-cache\f1f79c736ae204f8bdd43c7520a670cfbd2a2abf\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Rocio\.android\build-cache\cc93256f4ee1a614e6a4206af1947d5e86c03d2c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Rocio\.android\build-cache\f477f8e2467a89e2b939f4ac9ac20dbf4ade0a7c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Rocio\.android\build-cache\3c61eeb8e1af3e0cc9d8df09abc15326d0ed98cb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Rocio\.android\build-cache\c61dc0c7e93405838d761dda77ec7cafb86393e6\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Rocio\.android\build-cache\c122b2c62e6659b3d971ba15a87a1eac8db353ea\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Rocio\.android\build-cache\b26ced47d205a2b287e6edf0d0ca04b010395ebe\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Rocio\.android\build-cache\7a201d2cb9a868a7f570e15d497e13ef68c82710\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Rocio\.android\build-cache\7a201d2cb9a868a7f570e15d497e13ef68c82710\output\AndroidManifest.xml:26:9-47

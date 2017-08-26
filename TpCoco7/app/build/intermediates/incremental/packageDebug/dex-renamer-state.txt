@@ -1,0 +1,7 @@
+#Sat Aug 26 08:33:07 ART 2017
+base.0=C\:\\Users\\Rocio\\Desktop\\TpCoco7\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e070943dd5cffeba80452e82fc4a5718edaa5694
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Rocio\\Desktop\\TpCoco7\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a1d74027e2ea95146623fe23bf98058b9f6b21cd\\classes.dex
+base.1=C\:\\Users\\Rocio\\Desktop\\TpCoco7\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a1d74027e2ea95146623fe23bf98058b9f6b21cd
+file.0=C\:\\Users\\Rocio\\Desktop\\TpCoco7\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e070943dd5cffeba80452e82fc4a5718edaa5694\\classes.dex
