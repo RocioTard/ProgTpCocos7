@@ -204,7 +204,7 @@ public class clsJuego7 {
             super.addChild(mono);
         }
 
-        boolean InterseccionEntreSprites(Sprite mono, Sprite banana)
+        public boolean InterseccionEntreSprites(Sprite mono, Sprite banana)
         {
             boolean Devolver;
             Devolver=false;
@@ -293,7 +293,7 @@ public class clsJuego7 {
             return Devolver;
         }
 
-        void ColisionMonoBanana(float DiferenciaTiempo)
+        void ColisionMonoBanana()
         {
             boolean Devolver;
             Devolver=false;
@@ -413,8 +413,7 @@ public class clsJuego7 {
         @Override
         public boolean ccTouchesMoved(MotionEvent event){
 
-            //ESTE ES EL TIMER QUE ME DEBERIA LLEVAR A LA FUNCION DE COLISION
-            super.schedule("ColisionMonoBanana, 0.25f");
+            ColisionMonoBanana();
 
             float XTocada, YTocada;
             XTocada= event.getX();

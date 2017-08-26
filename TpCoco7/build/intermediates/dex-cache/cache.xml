@@ -3,30 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Rocio\Desktop\TpCoco7\app\libs\cocos2d-android.v0.82.jar"
+        jar="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7df0a82c7c5cf5167082e195ee22fa0d6085505d">
+        <dex dex="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b5927a0b6057ba9602cb78b3a1b85aeeeb6f1d2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\libs\cocos2d-android.v0.82.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="0bd2a4a7260db13d42c683d262bb5243b3b2ed87">
-        <dex dex="C:\Users\Rocio\Desktop\TpCoco7\app\build\intermediates\transforms\dex\debug\folders\1000\2\cocos2d-android.v0.82_2d77bafd9b6514e703b02abc4e63b7ec5ed3b30c\classes.dex" />
+        <dex dex="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\transforms\dex\debug\folders\1000\2\cocos2d-android.v0.82_b2a679d0f4f7fed7fdaf41cb4847e7d4bbb774e0\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Rocio\Desktop\TpCoco7\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="17ff1e872d2779d60918daec857f12f11b1c9565">
-        <dex dex="C:\Users\Rocio\Desktop\TpCoco7\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a1d74027e2ea95146623fe23bf98058b9f6b21cd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rocio\Desktop\TpCoco7\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="C:\Users\Rocio\Desktop\TpCoco7\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e070943dd5cffeba80452e82fc4a5718edaa5694\classes.dex" />
+        <dex dex="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1a7b0ee467270dd32b26dc45fc2da2d07dd69ab8\classes.dex" />
     </item>
 
 </items>
