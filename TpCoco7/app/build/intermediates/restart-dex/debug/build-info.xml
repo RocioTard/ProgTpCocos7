@@ -6,51 +6,47 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1503754674869"
+    timestamp="1503834427339"
     token="3825685619282427295"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1059" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="34" />
+        duration="0" />
     <task
         name="verifier"
-        duration="67" />
-
-    <artifact
-        location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1503754274802"
+        timestamp="1503834268041"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -62,25 +58,15 @@
             location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503754674869"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Rocio\Desktop\GitTpCoco\ProgTpCocos7\TpCoco7\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
+        timestamp="1503834427339"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

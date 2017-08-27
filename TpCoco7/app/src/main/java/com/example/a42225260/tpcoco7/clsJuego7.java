@@ -208,67 +208,59 @@ public class clsJuego7 {
         {
             boolean Devolver;
             Devolver=false;
+            int Sprite1Izquierda, Sprite1Derecha, Sprite1Abajo, Sprite1Arriba;
+            int Sprite2Izquierda, Sprite2Derecha, Sprite2Abajo, Sprite2Arriba;
+            Sprite1Izquierda=(int) (mono.getPositionX() - mono.getWidth()/2);
+            Sprite1Derecha=(int) (mono.getPositionX() + mono.getWidth()/2);
+            Sprite1Abajo=(int) (mono.getPositionY() - mono.getHeight()/2);
+            Sprite1Arriba=(int) (mono.getPositionY() + mono.getHeight()/2);
+            Sprite2Izquierda=(int) (banana.getPositionX() - banana.getWidth()/2);
+            Sprite2Derecha=(int) (banana.getPositionX() + banana.getWidth()/2);
+            Sprite2Abajo=(int) (banana.getPositionY() - banana.getHeight()/2);
+            Sprite2Arriba=(int) (banana.getPositionY() + banana.getHeight()/2);
+            Log.d("Interseccion", "Sp1 - Izq: "+Sprite1Izquierda+"- Der:"  +Sprite1Derecha+" - Aba: "+Sprite1Abajo+ " - Arr: "+Sprite1Arriba);
+            Log.d("Interseccion", "Sp2 - Izq: "+Sprite2Izquierda+" - Der: "+Sprite2Derecha+" - Aba:"+Sprite2Abajo+" - Arr: "+Sprite2Arriba);
+//Borde izq y borde inf de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Izquierda, Sprite2Izquierda, Sprite2Derecha) &&EstaEntre(Sprite1Abajo, Sprite2Abajo, Sprite2Arriba)) {
+            Log.d("Interseccion", "1");
+            Devolver=true;
+        }
+//Borde izq y borde sup de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Izquierda, Sprite2Izquierda, Sprite2Derecha) &&EstaEntre(Sprite1Arriba, Sprite2Abajo, Sprite2Arriba)) {
+                Log.d("Interseccion", "2");
+            Devolver=true;
+        }
+//Borde der y borde sup de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Derecha, Sprite2Izquierda, Sprite2Derecha)&&EstaEntre(Sprite1Arriba, Sprite2Abajo, Sprite2Arriba)) {
+            Log.d("Interseccion", "3");
+            Devolver=true;
+        }
+//Borde der y borde inf de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Derecha, Sprite2Izquierda, Sprite2Derecha)&&EstaEntre(Sprite1Abajo, Sprite2Abajo, Sprite2Arriba)) {
+            Log.d("Interseccion", "4");
+            Devolver=true;
+        }
+//Borde izq y borde inf de Sprite 2 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Izquierda, Sprite1Izquierda, Sprite1Derecha)&&  EstaEntre(Sprite2Abajo, Sprite1Abajo, Sprite1Arriba)) {
+            Log.d("Interseccion", "5");
+            Devolver=true;
+        }
 
-            int SpriteMonoIzquierda, SpriteMonoDerecha, SpriteMonoAbajo, SpriteMonoArriba;
-            int SpriteBananaIzquierda, SpriteBananaDerecha, SpriteBananaAbajo, SpriteBananaArriba;
-
-            SpriteMonoIzquierda=(int) (mono.getPositionX() - mono.getWidth()/2);
-            SpriteMonoDerecha=(int) (mono.getPositionX() - mono.getWidth()/2);
-            SpriteMonoAbajo=(int) (mono.getPositionY() - mono.getWidth()/2);
-            SpriteMonoArriba=(int) (mono.getPositionY() - mono.getWidth()/2);
-
-            SpriteBananaIzquierda=(int) (banana.getPositionX() - banana.getWidth()/2);
-            SpriteBananaDerecha=(int) (banana.getPositionX() - banana.getWidth()/2);
-            SpriteBananaAbajo=(int) (banana.getPositionY() - banana.getWidth()/2);
-            SpriteBananaArriba=(int) (banana.getPositionY() - banana.getWidth()/2);
-
-            Log.d("Interseccion", "SpMono-Izq: "+SpriteMonoIzquierda+" - Der:"+SpriteMonoDerecha+" -Aba:"+ SpriteMonoAbajo+" Arr:" +SpriteMonoArriba);
-            Log.d("Interseccion", "SpBanana-Izq: "+SpriteBananaIzquierda+" - Der:"+SpriteBananaDerecha+" -Aba:"+ SpriteBananaAbajo+" Arr:" +SpriteBananaArriba);
-
-            //Borde izq y borde inf de Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoIzquierda,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoAbajo, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","1");
-                Devolver=true;
-            }
-
-            //Borde izq y borde sup de Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoIzquierda,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoArriba, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","2");
-                Devolver=true;
-            }
-
-            //Borde der y borde sup Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoDerecha,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoArriba, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","3");
-                Devolver=true;
-            }
-
-            //Borde der y borde inf Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoDerecha,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoAbajo, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","4");
-                Devolver=true;
-            }
-
-            //Borde izq y borde inf de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaIzquierda,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaAbajo, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","5");
-                Devolver=true;
-            }
-            //Borde izq y borde sup de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaIzquierda,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaArriba, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","6");
-                Devolver=true;
-            }
-            //Borde der y borde sup de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaDerecha,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaArriba, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","7");
-                Devolver=true;
-            }
-            //Borde izq y borde inf de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaDerecha,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaAbajo, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","8");
-                Devolver=true;
-            }
+//Borde izq y borde sup de Sprite 1 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Izquierda, Sprite1Izquierda, Sprite1Derecha)&& EstaEntre(Sprite2Arriba, Sprite1Abajo, Sprite1Arriba)) {
+                Log.d("Interseccion", "6");
+            Devolver=true;
+        }
+//Borde der y borde sup de Sprite 2 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Derecha, Sprite1Izquierda, Sprite1Derecha)&& EstaEntre(Sprite2Arriba, Sprite1Abajo, Sprite1Arriba)) {
+                Log.d("Interseccion", "7");
+            Devolver=true;
+        }
+//Borde der y borde inf de Sprite 2 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Derecha, Sprite1Izquierda, Sprite1Derecha)&&EstaEntre(Sprite2Abajo, Sprite1Abajo, Sprite1Arriba)) {
+                Log.d("Interseccion", "8");
+            Devolver=true;
+        }
             return Devolver;
         }
 
@@ -297,78 +289,71 @@ public class clsJuego7 {
         {
             boolean Devolver;
             Devolver=false;
-
-            int SpriteMonoIzquierda, SpriteMonoDerecha, SpriteMonoAbajo, SpriteMonoArriba;
-            int SpriteBananaIzquierda, SpriteBananaDerecha, SpriteBananaAbajo, SpriteBananaArriba;
-
-            SpriteMonoIzquierda=(int) (mono.getPositionX() - mono.getWidth()/2);
-            SpriteMonoDerecha=(int) (mono.getPositionX() - mono.getWidth()/2);
-            SpriteMonoAbajo=(int) (mono.getPositionY() - mono.getWidth()/2);
-            SpriteMonoArriba=(int) (mono.getPositionY() - mono.getWidth()/2);
-
-            SpriteBananaIzquierda=(int) (banana.getPositionX() - banana.getWidth()/2);
-            SpriteBananaDerecha=(int) (banana.getPositionX() - banana.getWidth()/2);
-            SpriteBananaAbajo=(int) (banana.getPositionY() - banana.getWidth()/2);
-            SpriteBananaArriba=(int) (banana.getPositionY() - banana.getWidth()/2);
-
-            Log.d("Interseccion", "SpMono-Izq: "+SpriteMonoIzquierda+" - Der:"+SpriteMonoDerecha+" -Aba:"+ SpriteMonoAbajo+" Arr:" +SpriteMonoArriba);
-            Log.d("Interseccion", "SpBanana-Izq: "+SpriteBananaIzquierda+" - Der:"+SpriteBananaDerecha+" -Aba:"+ SpriteBananaAbajo+" Arr:" +SpriteBananaArriba);
-
-            //Borde izq y borde inf de Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoIzquierda,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoAbajo, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","1");
+            int Sprite1Izquierda, Sprite1Derecha, Sprite1Abajo, Sprite1Arriba;
+            int Sprite2Izquierda, Sprite2Derecha, Sprite2Abajo, Sprite2Arriba;
+            Sprite1Izquierda=(int) (mono.getPositionX() - mono.getWidth()/2);
+            Sprite1Derecha=(int) (mono.getPositionX() + mono.getWidth()/2);
+            Sprite1Abajo=(int) (mono.getPositionY() - mono.getHeight()/2);
+            Sprite1Arriba=(int) (mono.getPositionY() + mono.getHeight()/2);
+            Sprite2Izquierda=(int) (banana.getPositionX() - banana.getWidth()/2);
+            Sprite2Derecha=(int) (banana.getPositionX() + banana.getWidth()/2);
+            Sprite2Abajo=(int) (banana.getPositionY() - banana.getHeight()/2);
+            Sprite2Arriba=(int) (banana.getPositionY() + banana.getHeight()/2);
+            Log.d("Interseccion", "Sp1 - Izq: "+Sprite1Izquierda+"- Der:"  +Sprite1Derecha+" - Aba: "+Sprite1Abajo+ " - Arr: "+Sprite1Arriba);
+            Log.d("Interseccion", "Sp2 - Izq: "+Sprite2Izquierda+" - Der: "+Sprite2Derecha+" - Aba:"+Sprite2Abajo+" - Arr: "+Sprite2Arriba);
+//Borde izq y borde inf de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Izquierda, Sprite2Izquierda, Sprite2Derecha) &&EstaEntre(Sprite1Abajo, Sprite2Abajo, Sprite2Arriba)) {
+                Log.d("Interseccion", "1");
+                Devolver=true;
+            }
+//Borde izq y borde sup de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Izquierda, Sprite2Izquierda, Sprite2Derecha) &&EstaEntre(Sprite1Arriba, Sprite2Abajo, Sprite2Arriba)) {
+                Log.d("Interseccion", "2");
+                Devolver=true;
+            }
+//Borde der y borde sup de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Derecha, Sprite2Izquierda, Sprite2Derecha)&&EstaEntre(Sprite1Arriba, Sprite2Abajo, Sprite2Arriba)) {
+                Log.d("Interseccion", "3");
+                Devolver=true;
+            }
+//Borde der y borde inf de Sprite 1 está dentro de Sprite 2
+            if (EstaEntre(Sprite1Derecha, Sprite2Izquierda, Sprite2Derecha)&&EstaEntre(Sprite1Abajo, Sprite2Abajo, Sprite2Arriba)) {
+                Log.d("Interseccion", "4");
+                Devolver=true;
+            }
+//Borde izq y borde inf de Sprite 2 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Izquierda, Sprite1Izquierda, Sprite1Derecha)&&  EstaEntre(Sprite2Abajo, Sprite1Abajo, Sprite1Arriba)) {
+                Log.d("Interseccion", "5");
                 Devolver=true;
             }
 
-            //Borde izq y borde sup de Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoIzquierda,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoArriba, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","2");
+//Borde izq y borde sup de Sprite 1 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Izquierda, Sprite1Izquierda, Sprite1Derecha)&& EstaEntre(Sprite2Arriba, Sprite1Abajo, Sprite1Arriba)) {
+                Log.d("Interseccion", "6");
                 Devolver=true;
             }
-
-            //Borde der y borde sup Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoDerecha,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoArriba, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","3");
+//Borde der y borde sup de Sprite 2 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Derecha, Sprite1Izquierda, Sprite1Derecha)&& EstaEntre(Sprite2Arriba, Sprite1Abajo, Sprite1Arriba)) {
+                Log.d("Interseccion", "7");
                 Devolver=true;
             }
-
-            //Borde der y borde inf Sprite 1 esta dentro de Sprite 2
-            if (EstaEntre(SpriteMonoDerecha,SpriteBananaIzquierda,SpriteBananaDerecha) && EstaEntre(SpriteMonoAbajo, SpriteBananaAbajo, SpriteBananaArriba)){
-                Log.d("Interseccion","4");
+//Borde der y borde inf de Sprite 2 está dentro de Sprite 1
+            if (EstaEntre(Sprite2Derecha, Sprite1Izquierda, Sprite1Derecha)&&EstaEntre(Sprite2Abajo, Sprite1Abajo, Sprite1Arriba)) {
+                Log.d("Interseccion", "8");
                 Devolver=true;
             }
-
-            //Borde izq y borde inf de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaIzquierda,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaAbajo, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","5");
-                Devolver=true;
-            }
-            //Borde izq y borde sup de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaIzquierda,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaArriba, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","6");
-                Devolver=true;
-            }
-            //Borde der y borde sup de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaDerecha,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaArriba, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","7");
-                Devolver=true;
-            }
-            //Borde izq y borde inf de Sprite 2 esta dentro de Sprite 1
-            if (EstaEntre(SpriteBananaDerecha,SpriteMonoIzquierda,SpriteMonoDerecha) && EstaEntre(SpriteBananaAbajo, SpriteMonoAbajo, SpriteMonoArriba)){
-                Log.d("Interseccion","8");
-                Devolver=true;
-            }
-
 
             if(Devolver==true && ImagenTocada==0)
             { //El mono toco la banana, la banana se mueve
 
                 Log.d("Se tocaron"," el mono toco a la banana");
+                //MICA ACA HAY QUE LLAMARA LA FUNCION QUE MUEVE A LA BANANA, LA MANDAS EL SPRITE DE LA BANANA COMO PARAMETRO
 
             }
             if(Devolver==true && ImagenTocada==1)
             { //La banana toco al mono, el mono se mueve
                 Log.d("Se tocaron"," La banana toco al mono");
+                //MICA ACA LLAMAS A LA MISMA FUNCION DE ARRIBA PERO MANDANDOLE COMO PARAMETRO AL MONO, ENTONCES LA FUNCION MUEVE AL MONO
 
             }
         }
